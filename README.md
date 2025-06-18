@@ -1,3 +1,8 @@
+This is a CPET-specific **FORK** of [Online Boutique](https://github.com/GoogleCloudPlatform/microservices-demo), which adds a dependency on PostgreSQL, in order to more accurately represent a real customer's established workload. It's intended for use in our 2025 Platform Engineering project.
+
+----------------
+
+
 <!-- <p align="center">
 <img src="/src/frontend/static/icons/Hipster_HeroLogoMaroon.svg" width="300" alt="Online Boutique" />
 </p> -->
