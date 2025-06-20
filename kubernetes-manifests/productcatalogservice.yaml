@@ -64,6 +64,15 @@ spec:
           limits:
             cpu: 200m
             memory: 128Mi
+      - name: cloud-sql-proxy
+        image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:latest
+        args:
+          - "--private-ip"
+          - "--auto-iam-authn"
+          - "--port=5432"
+          - "TODO DAVE REPLACE WITH CLOUDSQL CONNECTION NAME -- PROBABLY AS A SECRET"
+        securityContext:
+          runAsNonRoot: true
 ---
 apiVersion: v1
 kind: Service
