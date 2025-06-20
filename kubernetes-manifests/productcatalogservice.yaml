@@ -70,7 +70,7 @@ spec:
           - "--private-ip"
           - "--auto-iam-authn"
           - "--port=5432"
-          - "TODO DAVE REPLACE WITH CLOUDSQL CONNECTION NAME -- PROBABLY AS A SECRET"
+          - "cpet-stanke-sandbox:us-central1:online-boutique-db"  # TODO: replace with a variable
         securityContext:
           runAsNonRoot: true
 ---
