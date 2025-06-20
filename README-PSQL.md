@@ -59,7 +59,7 @@ gcloud sql users create dbuser \
 ```
 
 ```sh
-EXPORT CLUSTER_NAME=<name-of-cluster-where-onlineboutique-is-deployed>
+export CONNECTION_NAME=$(gcloud sql instances describe online-boutique-db --format='value(connectionName)')
 ```
 
 ```sh
