@@ -23,7 +23,7 @@ This README file refers only to this fork. The original README has been renamed 
     INSERT INTO catalog_items (id, name, description, picture, price_usd_currency_code, price_usd_units, price_usd_nanos, categories) VALUES ('9SIQT8TOJO', 'Bamboo Glass Jar', 'This bamboo glass jar can hold 57 oz (1.7 l) and is perfect for any kitchen.', '/static/img/products/bamboo-glass-jar.jpg', 'USD', 5, 490000000, 'kitchen');
     INSERT INTO catalog_items (id, name, description, picture, price_usd_currency_code, price_usd_units, price_usd_nanos, categories) VALUES ('6E92ZMYYFZ', 'Mug', 'A simple mug with a mustard interior.', '/static/img/products/mug.jpg', 'USD', 8, 990000000, 'kitchen');
     ```
-4. Create a Postgres and grant read permissions on `catalog_items` to it. Note the username and password for later.
+4. Create a Postgres user and grant read permissions on `catalog_items` to it. Note the username and password for later.
 
 
 ### deploy locally for iterative development
