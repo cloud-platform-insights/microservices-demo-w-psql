@@ -19,9 +19,10 @@ import (
 	// "context"
 	"database/sql"
 	"fmt"
+	"strconv"
 
 	// "net"
-	// "os"
+	"os"
 	"strings"
 
 	_ "github.com/lib/pq"
@@ -32,14 +33,6 @@ import (
 	pb "github.com/GoogleCloudPlatform/microservices-demo/src/productcatalogservice/genproto"
 	// "github.com/golang/protobuf/jsonpb"
 	// "github.com/jackc/pgx/v5/pgxpool"
-)
-
-const (
-	dbhost     = "34.61.198.228"
-	dbport     = 5432
-	dbuser     = "dbuser"
-	dbpassword = "bellhop-sumerian-truce-EMBOLDEN"
-	dbname     = "products"
 )
 
 func loadCatalog(catalog *pb.ListProductsResponse) error {
@@ -80,6 +73,12 @@ func loadCatalog(catalog *pb.ListProductsResponse) error {
 
 func loadCatalogFromPostgres(catalog *pb.ListProductsResponse) error {
 
+	dbhost := os.Getenv("DB_HOST")
+	dbport, _ := strconv.Atoi(os.Getenv("DB_PORT"))
+	dbuser := os.Getenv("DB_USER")
+	dbpassword := os.Getenv("DB_PASS")
+	dbname := os.Getenv("DB_NAME")
+
 	// check if we can connect to the db
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
@@ -91,7 +90,13 @@ func loadCatalogFromPostgres(catalog *pb.ListProductsResponse) error {
 	}
 	defer db.Close()
 
-	rows, err := db.Query("SELECT * FROM catalog_items WHERE 1 = 1")
+	query := `
+		SELECT id, name, description, picture, price_usd_currency_code, price_usd_units, price_usd_nanos, categories 
+		FROM "public"."catalog_items" 
+		LIMIT 1000;
+		`
+
+	rows, err := db.Query(query)
 	if err != nil {
 		panic(err)
 	}
