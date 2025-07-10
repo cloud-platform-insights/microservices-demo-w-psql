@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: microservices-demo-w-psql
+  annotations:
+    github.com/project-slug: cloud-platform-insights/microservices-demo-w-psql
+spec:
+  type: other
+  lifecycle: unknown
+  owner: cpet-core
