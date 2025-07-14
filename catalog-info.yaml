@@ -4,6 +4,7 @@ metadata:
   name: microservices-demo-w-psql
   annotations:
     github.com/project-slug: cloud-platform-insights/microservices-demo-w-psql
+    backstage.io/kubernetes-id: cpet-hipster-app
 spec:
   type: other
   lifecycle: unknown
