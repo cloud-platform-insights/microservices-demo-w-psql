@@ -17,7 +17,9 @@ spec:
   type: service
   lifecycle: experimental
   owner: group:default/cpet-core
-  system: online-boutique
+  system: microservices-demo-w-psql
+  subcomponentof:
+    - system:online-boutique
   dependsOn:
   - 'component:adservice'
   # - .... more backends here 
