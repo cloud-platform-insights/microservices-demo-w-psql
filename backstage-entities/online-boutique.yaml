@@ -5,4 +5,3 @@ metadata:
   description: Hippest shop in town.
 spec:
   owner: group:default/cpet-core
-  domain: retail
