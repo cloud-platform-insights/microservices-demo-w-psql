@@ -1,12 +1,21 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Location
 metadata:
   name: microservices-demo-w-psql
-  annotations:
-    github.com/project-slug: cloud-platform-insights/microservices-demo-w-psql
-    backstage.io/kubernetes-id: cpet-hipster-app
-    backstage.io/techdocs-ref: dir:.
+  description: all components of the cpet branch of online boutique, with PostgreSQL
 spec:
-  type: other
-  lifecycle: unknown
+  lifecycle: experimental
   owner: cpet-core
+  targets:
+    - ./backstage-entities/online-boutique.yaml
+    - ./backstage-entities/adservice.yaml
+    - ./backstage-entities/cartservice.yaml
+    - ./backstage-entities/checkoutservice.yaml
+    - ./backstage-entities/currencyservice.yaml
+    - ./backstage-entities/emailservice.yaml
+    - ./backstage-entities/frontend.yaml
+    - ./backstage-entities/loadgenerator.yaml
+    - ./backstage-entities/paymentservice.yaml
+    - ./backstage-entities/productcatalogservice.yaml
+    - ./backstage-entities/recommendationservice.yaml
+    - ./backstage-entities/shippingservice.yaml
