@@ -24,6 +24,7 @@ metadata:
   name: emailservice
   labels:
     app: emailservice
+    backstage.io/kubernetes-id: emailservice
 spec:
   selector:
     matchLabels:
@@ -32,6 +33,7 @@ spec:
     metadata:
       labels:
         app: emailservice
+        backstage.io/kubernetes-id: emailservice
     spec:
       serviceAccountName: emailservice
       terminationGracePeriodSeconds: 5
@@ -79,6 +81,7 @@ metadata:
   name: emailservice
   labels:
     app: emailservice
+    backstage.io/kubernetes-id: emailservice
 spec:
   type: ClusterIP
   selector:
@@ -99,6 +102,7 @@ metadata:
   name: checkoutservice
   labels:
     app: checkoutservice
+    backstage.io/kubernetes-id: checkoutservice
 spec:
   selector:
     matchLabels:
@@ -107,6 +111,7 @@ spec:
     metadata:
       labels:
         app: checkoutservice
+        backstage.io/kubernetes-id: checkoutservice
     spec:
       serviceAccountName: checkoutservice
       securityContext:
@@ -161,6 +166,7 @@ metadata:
   name: checkoutservice
   labels:
     app: checkoutservice
+    backstage.io/kubernetes-id: checkoutservice
 spec:
   type: ClusterIP
   selector:
@@ -181,6 +187,7 @@ metadata:
   name: recommendationservice
   labels:
     app: recommendationservice
+    backstage.io/kubernetes-id: recommendationservice
 spec:
   selector:
     matchLabels:
@@ -189,6 +196,7 @@ spec:
     metadata:
       labels:
         app: recommendationservice
+        backstage.io/kubernetes-id: recommendationservice
     spec:
       serviceAccountName: recommendationservice
       terminationGracePeriodSeconds: 5
@@ -238,6 +246,7 @@ metadata:
   name: recommendationservice
   labels:
     app: recommendationservice
+    backstage.io/kubernetes-id: recommendationservice
 spec:
   type: ClusterIP
   selector:
@@ -353,6 +362,7 @@ metadata:
   name: frontend
   labels:
     app: frontend
+    backstage.io/kubernetes-id: frontend
 spec:
   type: ClusterIP
   selector:
@@ -368,6 +378,7 @@ metadata:
   name: frontend-external
   labels:
     app: frontend
+    backstage.io/kubernetes-id: frontend
 spec:
   type: LoadBalancer
   selector:
@@ -388,6 +399,7 @@ metadata:
   name: paymentservice
   labels:
     app: paymentservice
+    backstage.io/kubernetes-id: paymentservice
 spec:
   selector:
     matchLabels:
@@ -396,6 +408,7 @@ spec:
     metadata:
       labels:
         app: paymentservice
+        backstage.io/kubernetes-id: paymentservice
     spec:
       serviceAccountName: paymentservice
       terminationGracePeriodSeconds: 5
@@ -441,6 +454,7 @@ metadata:
   name: paymentservice
   labels:
     app: paymentservice
+    backstage.io/kubernetes-id: paymentservice
 spec:
   type: ClusterIP
   selector:
@@ -461,6 +475,7 @@ metadata:
   name: productcatalogservice
   labels:
     app: productcatalogservice
+    backstage.io/kubernetes-id: productcatalogservice
 spec:
   selector:
     matchLabels:
@@ -469,6 +484,7 @@ spec:
     metadata:
       labels:
         app: productcatalogservice
+        backstage.io/kubernetes-id: productcatalogservice
     spec:
       serviceAccountName: productcatalogservice
       terminationGracePeriodSeconds: 5
@@ -514,6 +530,7 @@ metadata:
   name: productcatalogservice
   labels:
     app: productcatalogservice
+    backstage.io/kubernetes-id: productcatalogservice
 spec:
   type: ClusterIP
   selector:
@@ -534,6 +551,7 @@ metadata:
   name: cartservice
   labels:
     app: cartservice
+    backstage.io/kubernetes-id: cartservice
 spec:
   selector:
     matchLabels:
@@ -542,6 +560,7 @@ spec:
     metadata:
       labels:
         app: cartservice
+        backstage.io/kubernetes-id: cartservice
     spec:
       serviceAccountName: cartservice
       terminationGracePeriodSeconds: 5
@@ -588,6 +607,7 @@ metadata:
   name: cartservice
   labels:
     app: cartservice
+    backstage.io/kubernetes-id: cartservice
 spec:
   type: ClusterIP
   selector:
@@ -608,6 +628,7 @@ metadata:
   name: redis-cart
   labels:
     app: redis-cart
+    backstage.io/kubernetes-id: redis-cart
 spec:
   selector:
     matchLabels:
@@ -616,6 +637,7 @@ spec:
     metadata:
       labels:
         app: redis-cart
+        backstage.io/kubernetes-id: redis-cart
     spec:
       securityContext:
         fsGroup: 1000
@@ -662,6 +684,7 @@ metadata:
   name: redis-cart
   labels:
     app: redis-cart
+    backstage.io/kubernetes-id: redis-cart
 spec:
   type: ClusterIP
   selector:
@@ -677,6 +700,7 @@ metadata:
   name: loadgenerator
   labels:
     app: loadgenerator
+    backstage.io/kubernetes-id: loadgenerator
 spec:
   selector:
     matchLabels:
@@ -686,6 +710,7 @@ spec:
     metadata:
       labels:
         app: loadgenerator
+        backstage.io/kubernetes-id: loadgenerator
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
@@ -764,6 +789,7 @@ metadata:
   name: currencyservice
   labels:
     app: currencyservice
+    backstage.io/kubernetes-id: currencyservice
 spec:
   selector:
     matchLabels:
@@ -772,6 +798,7 @@ spec:
     metadata:
       labels:
         app: currencyservice
+        backstage.io/kubernetes-id: currencyservice
     spec:
       serviceAccountName: currencyservice
       terminationGracePeriodSeconds: 5
@@ -818,6 +845,7 @@ metadata:
   name: currencyservice
   labels:
     app: currencyservice
+    backstage.io/kubernetes-id: currencyservice
 spec:
   type: ClusterIP
   selector:
@@ -838,6 +866,7 @@ metadata:
   name: shippingservice
   labels:
     app: shippingservice
+    backstage.io/kubernetes-id: shippingservice
 spec:
   selector:
     matchLabels:
@@ -846,6 +875,7 @@ spec:
     metadata:
       labels:
         app: shippingservice
+        backstage.io/kubernetes-id: shippingservice
     spec:
       serviceAccountName: shippingservice
       securityContext:
@@ -891,6 +921,7 @@ metadata:
   name: shippingservice
   labels:
     app: shippingservice
+    backstage.io/kubernetes-id: shippingservice
 spec:
   type: ClusterIP
   selector:
@@ -968,6 +999,7 @@ metadata:
   name: adservice
   labels:
     app: adservice
+    backstage.io/kubernetes-id: adservice
 spec:
   type: ClusterIP
   selector:
