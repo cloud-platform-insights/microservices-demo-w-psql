@@ -19,7 +19,7 @@ spec:
   type: service
   lifecycle: experimental
   owner: group:default/cpet-core
-  system: microservices-demo-w-psql
+  system: online-boutique
   subcomponentof:
     - system:online-boutique
   # dependsOn: ['component:artists-db']

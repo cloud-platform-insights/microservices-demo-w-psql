@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: online-boutique
+  description: Hippest shop in town.
+spec:
+  owner: group:default/cpet-core
+  domain: retail
