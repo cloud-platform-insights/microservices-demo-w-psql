@@ -16,7 +16,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: cpet
+  owner: group:default/cpet-core
   system: online-boutique
   dependsOn:
   - 'component:adservice'

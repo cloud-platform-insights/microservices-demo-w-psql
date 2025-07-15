@@ -258,7 +258,7 @@ metadata:
   name: frontend
   labels:
     app: frontend
-    'backstage.io/kubernetes-id': frontend
+    backstage.io/kubernetes-id: frontend
 spec:
   selector:
     matchLabels:
@@ -267,7 +267,7 @@ spec:
     metadata:
       labels:
         app: frontend
-        backstage.io/kubernetes-id': frontend
+        backstage.io/kubernetes-id: frontend
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
@@ -911,7 +911,7 @@ metadata:
   name: adservice
   labels:
     app: adservice
-    'backstage.io/kubernetes-id': adservice
+    backstage.io/kubernetes-id: adservice
 spec:
   selector:
     matchLabels:
@@ -920,7 +920,7 @@ spec:
     metadata:
       labels:
         app: adservice
-        'backstage.io/kubernetes-id': adservice
+        backstage.io/kubernetes-id: adservice
     spec:
       serviceAccountName: adservice
       terminationGracePeriodSeconds: 5
