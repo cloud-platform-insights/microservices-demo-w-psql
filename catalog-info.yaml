@@ -10,14 +10,14 @@ spec:
   lifecycle: experimental
   owner: cpet-core
   targets:
-    - ./backstage-components/frontend.yaml
-    - ./backstage-components/adservice.yaml
-    - ./backstage-components/cartservice.yaml
-    - ./backstage-components/checkoutservice.yaml
-    - ./backstage-components/currencyservice.yaml
-    - ./backstage-components/emailservice.yaml
-    - ./backstage-components/loadgenerator.yaml
-    - ./backstage-components/paymentservice.yaml
-    - ./backstage-components/productcatalogservice.yaml
-    - ./backstage-components/recommendationservice.yaml
-    - ./backstage-components/shippingservice.yaml
+    - ./frontend.yaml
+    - ./adservice.yaml
+    - ./cartservice.yaml
+    - ./checkoutservice.yaml
+    - ./currencyservice.yaml
+    - ./emailservice.yaml
+    - ./loadgenerator.yaml
+    - ./paymentservice.yaml
+    - ./productcatalogservice.yaml
+    - ./recommendationservice.yaml
+    - ./shippingservice.yaml
