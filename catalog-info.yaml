@@ -6,6 +6,18 @@ metadata:
     github.com/project-slug: cloud-platform-insights/microservices-demo-w-psql
     backstage.io/kubernetes-id: cpet-hipster-app
 spec:
-  type: other
-  lifecycle: unknown
+  type: system
+  lifecycle: experimental
   owner: cpet-core
+  targets:
+    - ./backstage-components/frontend.yaml
+    - ./backstage-components/adservice.yaml
+    - ./backstage-components/cartservice.yaml
+    - ./backstage-components/checkoutservice.yaml
+    - ./backstage-components/currencyservice.yaml
+    - ./backstage-components/emailservice.yaml
+    - ./backstage-components/loadgenerator.yaml
+    - ./backstage-components/paymentservice.yaml
+    - ./backstage-components/productcatalogservice.yaml
+    - ./backstage-components/recommendationservice.yaml
+    - ./backstage-components/shippingservice.yaml
