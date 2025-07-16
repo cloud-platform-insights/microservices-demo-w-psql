@@ -3,5 +3,7 @@ kind: System
 metadata:
   name: online-boutique
   description: Hippest shop in town.
+  annotations:
+      'backstage.io/techdocs-ref': dir:..
 spec:
   owner: group:default/cpet-core
