@@ -13,6 +13,7 @@ metadata:
       icon: help
   annotations:
     'backstage.io/kubernetes-id': shippingservice
+    'backstage.io/techdocs-ref': dir:../src/shippingservice
 spec:
   type: service
   lifecycle: experimental

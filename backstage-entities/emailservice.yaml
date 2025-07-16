@@ -13,6 +13,7 @@ metadata:
       icon: help
   annotations:
     'backstage.io/kubernetes-id': emailservice
+    'backstage.io/techdocs-ref': dir:../src/emailservice
 spec:
   type: service
   lifecycle: experimental

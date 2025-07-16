@@ -12,6 +12,7 @@ metadata:
       icon: help
   annotations:
     'backstage.io/kubernetes-id': loadgenerator
+    'backstage.io/techdocs-ref': dir:../src/loadgenerator
 spec:
   type: service
   lifecycle: experimental

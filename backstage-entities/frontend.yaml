@@ -13,6 +13,7 @@ metadata:
       icon: help
   annotations:
     'backstage.io/kubernetes-id': frontend
+    'backstage.io/techdocs-ref': dir:../src/frontend
 spec:
   type: service
   lifecycle: experimental
