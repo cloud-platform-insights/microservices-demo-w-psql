@@ -14,7 +14,7 @@ metadata:
   annotations:
     'backstage.io/kubernetes-id': adservice
     'google.com/cloudbuild-project-slug': cpet-backstage
-    'backstage.io/techdocs-ref': dir:../adservice/src
+    'backstage.io/techdocs-ref': dir:../src/adservice
 spec:
   type: service
   lifecycle: experimental
