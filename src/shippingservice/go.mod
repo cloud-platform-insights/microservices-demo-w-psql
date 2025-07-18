@@ -1,6 +1,6 @@
 module github.com/GoogleCloudPlatform/microservices-demo/src/shippingservice
 
-go 1.23
+go 1.23.0
 
 require (
 	cloud.google.com/go/profiler v0.4.2
@@ -29,7 +29,7 @@ require (
 	go.opentelemetry.io/otel/metric v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
 	golang.org/x/crypto v0.33.0 // indirect
-	golang.org/x/oauth2 v0.25.0 // indirect
+	golang.org/x/oauth2 v0.27.0 // indirect
 	golang.org/x/sync v0.11.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
